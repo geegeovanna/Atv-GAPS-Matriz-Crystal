@@ -1,20 +1,21 @@
 ```mermaid
 
-flowchart TD
+graph TD
+subgraph Matriz_TechConnect
 
-A[Projeto: Sistema de Cadastro] --> B[Alta Atenção]
-A --> C[Média Atenção]
-A --> D[Baixa Atenção]
+A1["Entrega 1: Login (E) - 4 pessoas"]:::vermelho -->
+A2["Entrega 2: CRUD Empresas ativo (E) - 4 pessoas"]:::vermelho -->
+A3["Entrega 3: Upload Logotipo (C) - 2 pessoas"]:::branco
 
-B --> B1[Autenticação e Login]
-B --> B2[Controle de Permissões]
-B --> B3[Banco de Dados]
+B1["Entrega 4: Relatórios (PDF/Excel) (C) - 3 pessoas"]:::branco -->
+B2["Entrega 5: Painel Administrativo (D) - 4 pessoas"]:::amarelo -->
+B3["Entrega 6: Sistema Final (E) - 6 pessoas"]:::laranja
 
-C --> C1[CRUD de Empresas]
-C --> C2[Upload de Logotipo]
-C --> C3[Relatórios PDF/Excel]
+end
 
-D --> D1[Interface Responsiva]
-D --> D2[Design Visual]
+classDef branco fill:#ffffff, stroke:#000, stroke-width:1px;
+classDef laranja fill:#FFA233, stroke:#000, stroke-width:1px;
+classDef amarelo fill:#FFD84D, stroke:#000, stroke-width:1px;
+classDef vermelho fill:#E64C3C, stroke:#000, stroke-width:1px;
 
 ```
